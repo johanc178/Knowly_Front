@@ -9,13 +9,15 @@ import App from "./App";
 
 export const routerApp = [
   {
-    path: "/",
+    path: "/login",
     element: <Login />,
   },
   {
     path: "/",
     element: <App />,
     children: [
+      { path: "/", 
+        element: <Home /> },
       { path: "/home", 
         element: <Home /> },
       { path: "/cursos", 
