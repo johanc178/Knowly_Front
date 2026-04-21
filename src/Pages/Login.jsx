@@ -62,7 +62,7 @@ const Login = () => {
     
     if (usuarioEncontrado) {
       saveLocalStorage("Usuario", usuarioEncontrado)
-      redirect(usuarioEncontrado.nombre + " Bienvenido al sistema...", "/home", "success")
+      redirect(usuarioEncontrado.nombre + " Bienvenido al sistema...", "/cursos", "success")
     } else {
       redirect("El correo o la contraseña son incorrectos...", "/", "error")
     }
