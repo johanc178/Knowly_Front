@@ -10,26 +10,9 @@ const NavBar = function () {
         <Link to="/home">
           <img src="/src/Assets/logo_knowly-removebg-preview.png" alt="logo" />
         </Link>
-
-        <Link to="/cursos">Cursos</Link>
-        <Link to="/contacto">Comunidad</Link>
-        <Link to="/blogs">Blogs</Link>
-        <Link to="/certificados">Certificado</Link>
-        {/* Tarjeta Membresía */}
-        <div onClick={() => setOpen(!open)} style={{ cursor: "pointer" }}>
-          Membresía
-        </div>
-        <Link to="/login"className="btn-acceder">Acceder</Link>
-
-
         
-|
-        {/* Subtarjeta Estudiantes */}
-        {open && (
-          <div style={{ marginLeft: "5px" }}>
-            <Link to="/estudiantes">Estudiantes</Link>
-          </div>
-        )}
+        <Link to="/login"className="btn-acceder">Acceder</Link>
+        
       </nav>
     </aside>
   );
