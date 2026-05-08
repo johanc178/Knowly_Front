@@ -10,7 +10,9 @@ const NavBar = function () {
         <Link to="/home">
           <img src="/src/Assets/logo_knowly-removebg-preview.png" alt="logo" />
         </Link>
-        
+        <Link to="/Blogs">Blogs</Link>
+        <Link to="/Cursos">Cursos</Link>
+        <Link to="/Contacto">Nosotros</Link>
         <Link to="/login"className="btn-acceder">Acceder</Link>
         
       </nav>

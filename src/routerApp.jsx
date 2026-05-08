@@ -8,7 +8,6 @@ import Blogs from "./Pages/Blogs";
 import Vista from "./Pages/Vista";
 import App from "./App";
 
-
 export const routerApp = [
   {
     path: "/login",
@@ -18,22 +17,45 @@ export const routerApp = [
     path: "/",
     element: <App />,
     children: [
-      { path: "/", 
-        element: <Home /> },
-      { path: "/home", 
-        element: <Home /> },
-      { path: "/cursos", 
-        element: <Cursos /> },
-      { path: "/contacto", 
-        element: <Contacto /> },
-      { path: "/estudiantes",
-        element: <Estudiantes /> },
-      { path: "/certificados", 
-        element: <Certificados /> },
-      { path: "/blogs", 
-        element: <Blogs /> },
-      { path: "/vista", 
-        element: <Vista /> },
+      {
+        path: "/",
+        element: <Home />
+      },
+
+      {
+        path: "/home",
+        element: <Home />
+      },
+
+      {
+        path: "/cursos",
+        element: <Cursos />
+      },
+
+      {
+        path: "/contacto",
+        element: <Contacto />
+      },
+
+      {
+        path: "/estudiantes",
+        element: <Estudiantes />
+      },
+
+      {
+        path: "/certificados",
+        element: <Certificados />
+      },
+
+      {
+        path: "/blogs",
+        element: <Blogs />
+      },
+
+      {
+        path: "/curso/:slug",
+        element: <Vista />
+      },
     ],
   },
 ];

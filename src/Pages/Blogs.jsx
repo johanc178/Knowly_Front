@@ -34,19 +34,50 @@ function Blogs() {
 
   return (
     <div className="main text-black">
-      <h2>Blogs</h2>
-      <p className="subtitle">Métodos de aprendizaje y herramientas para tu desarrollo</p>
+
+      <div className="flex justify-center px-6 pt-0 pb-6">
+        <div className="max-w-4xl text-center">
+
+          <span className="inline-flex items-center rounded-full bg-white/30 backdrop-blur-md px-4 py-2 text-sm font-semibold text-black mb-4">
+            Blog educativo
+          </span>
+
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-black mb-4">
+            Aprende con recursos simples y prácticos
+          </h1>
+
+          <p className="text-base md:text-lg leading-7 text-black/75 max-w-3xl mx-auto">
+            Explora artículos, métodos de aprendizaje y herramientas diseñadas para
+            ayudarte a mejorar tus habilidades, organizar tu estudio y avanzar de forma más efectiva.
+          </p>
+
+        </div>
+      </div>
+
       <div className="Cards-container">
         {blogs.map((blog) => (
-          <div key={blog.title} className="Card">
-            {/* placeholder for future blog image */}
+          <div key={blog.title} className="Card overflow-hidden">
+
             <div className="Card__img" />
-            <span className="Card__category">{blog.category}</span>
-            <h3 className="Card__title">{blog.title}</h3>
-            <p className="Card__description">{blog.description}</p>
+
+            <div className="px-1 pt-4">
+              <span className="block text-sm font-semibold text-purple-600 mb-2">
+                {blog.category}
+              </span>
+
+              <h3 className="text-2xl font-bold leading-tight text-black mb-3">
+                {blog.title}
+              </h3>
+
+              <p className="text-base leading-7 text-black/70">
+                {blog.description}
+              </p>
+            </div>
+
           </div>
         ))}
       </div>
+
     </div>
   );
 }
