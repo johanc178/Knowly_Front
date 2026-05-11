@@ -6,3 +6,4 @@ export let end_points = {
     inscripciones: URL_BASE + "inscripciones"
 }
 
+//api de la del back de knowly ya la consume y con el rol

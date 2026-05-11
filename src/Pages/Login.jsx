@@ -14,7 +14,7 @@ const Login = () => {
     fetch(end_points.usuario)
       .then((response) => response.json())
       .then((data) => {
-        console.log("DATOS DE LA API:", data)
+        console.log("DATOS DE LA API:", data) // muestra en consola los datos que se va agrendando en el back de la basee de datos
         setUsuario(data)
       })
       .catch((error) => console.log(error))
